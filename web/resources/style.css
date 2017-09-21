@@ -1,0 +1,113 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 21, 2017, 3:07:31 PM
+    Author     : Admin
+*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%;
+    margin: 1em;
+    display: inline-flex;
+}
+.left {
+    width: 30%;
+    height: 100%;
+}
+.left ul li {    
+    list-style: none;
+}
+.left ul li a{
+    text-decoration: none;
+}
+.right-side{
+    width: 100%;
+    height: auto;
+}
+
+.right-side .top{
+    width: 100%;
+    display: block;
+    height: 4em;
+}
+
+.right-side .top  p{
+    display: block;
+    float: left;
+}
+
+.right-side .top .btn_right{
+    margin-top: 1em;
+    float: right;
+    margin-right: 12em;
+}
+.bottom {
+    width: 100%;
+    display: block;
+}
+
+.bottom form {
+    margin-top: -3em;
+}
+
+.btn_group {
+    display: inline-table;
+}
+.btn-left {
+    width: 25%;
+    float: left;
+    margin-top: 3em;
+    margin-left: 6.5em;
+}
+
+.btn-right {
+    width: 25%;
+    margin-top: -29px;
+    display: block;
+    margin-right: 10em;
+}
+
+input {
+    width: 20em;
+}
+select {
+    width: 20em;
+    height: 1.8em;
+}
+textarea {
+    width: 30em;
+    height: 7em;
+}
+.btn {
+    padding: 0 30px;    
+    background: #efefef;
+    text-decoration: none;
+    border:grey thin solid;
+}
+
+.list-view .tbl_list {
+    width: 89%;
+    margin-left: -6px;
+}
+
+.list-view .tbl_list th,td {
+    text-align: left;
+    padding: 2px 5px;
+}
+
+.list-view .tbl_list th,td {
+    text-align: left;
+    padding: 2px 5px;
+    vertical-align: top;
+}
+
+.fix-width {
+    width: 18em;
+}

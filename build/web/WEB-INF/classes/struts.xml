@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="true" />
+	
+    <package name="default" extends="struts-default">
+        
+        <action name="user_list" class="com.opmyanmar.action.UserAction" method="retrieveUsers">
+            <result>/layout/user/user_list.jsp</result>
+        </action>
+        
+        <action name="action" class="com.opmyanmar.action.LoginAction" method="execute">
+            <result name="success">layout/user/user_list.jsp</result>
+            <result name="login">index.jsp</result>
+            <result name="error">index.jsp</result>
+        </action>
+        
+        <action name="user_new" class="com.opmyanmar.action.UserAction" method="goToForm">
+            <result>/layout/user/user_form.jsp</result>
+        </action>
+        
+        <action name="user_save" class="com.opmyanmar.action.UserAction" method="save">
+            <result name="success">/layout/user/user_list.jsp</result>
+            <result name="error">/layout/user/user_form.jsp</result>
+        </action>        
+        
+        <action name="user_delete" class="com.opmyanmar.action.UserAction" method="deleteUser">
+            <result name="success">/layout/user/user_list.jsp</result>
+            <result name="error">/layout/user/user_form.jsp</result>
+        </action>        
+        
+        <action name="user_detail" class="com.opmyanmar.action.UserAction" method="getUserDetail">
+            <result name="success">/layout/user/user_form.jsp</result>
+        </action>
+    </package>
+
+</struts>
